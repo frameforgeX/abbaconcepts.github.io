@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>AbbaConcepts — Find Your Next Creative Service</title>
+<meta name="description" content="Find & hire your creative partner. Browse creative services, packages and professional teams." />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+<!-- Navbar -->
+<header class="navbar">
+  <div class="container nav-inner">
+    <a href="#" class="logo">Abba<span>.Concepts</span></a>
+    <nav class="nav-links" id="navLinks">
+      <a href="#portfolio">Portfolio</a>
+      <a href="#services">Services</a>
+      <a href="#contact">Contact</a>
+      <a href="#admin">My CV</a>
+      <button class="icon-btn" aria-label="Cart">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg>
+      </button>
+    </nav>
+    <button class="menu-btn" id="menuBtn" aria-label="Menu">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+    </button>
+  </div>
+</header>
+
+<main>
+<!-- Hero -->
+<section class="hero">
+  <img src="assets/hero-bg.jpg" alt="" aria-hidden="true" class="hero-bg" />
+  <div class="hero-overlay"></div>
+  <div class="container hero-inner">
+    <h1>Find Your Next<br><span class="accent">Creative Service</span></h1>
+    <p class="hero-sub">Find &amp; hire your creative partner from the box.</p>
+    <div class="search-box">
+      <select>
+        <option>Category</option><option>Design</option><option>Development</option><option>Marketing</option><option>Writing</option>
+      </select>
+      <span class="divider"></span>
+      <select>
+        <option>Budget</option><option>Under $500</option><option>$500 - $1000</option><option>$1000 - $5000</option><option>$5000+</option>
+      </select>
+      <button class="btn btn-hero">Search Now </button>
+    </div>
+  </div>
+</section>
+
+<!-- Intro -->
+<section class="section intro">
+  <div class="container intro-grid">
+    <div>
+      <p class="eyebrow">We are the best place</p>
+      <p class="muted-lg">For creative professionals and businesses looking for quality services.</p>
+    </div>
+    <div>
+      <h2>Creative solutions for all businesses. <span class="dim">Flexible packages at competitive rates.</span></h2>
+      <p class="muted">We connect talented creators with businesses seeking exceptional work. Whether you need graphic design, web development, content creation, or marketing services, we have the right professional for your project.</p>
+    </div>
+  </div>
+</section>
+
+<!-- Packages -->
+<section class="section packages">
+  <div class="container">
+    <div class="section-head">
+      <p class="eyebrow">Any Size &amp; Location</p>
+      <h2>We Have Services for any Team Size</h2>
+      <p class="muted">No matter how many people you need or what kind of project you're working on, we have creative professionals ranging from solo contractors to agency-sized teams.</p>
+      <button class="btn btn-outline">See Our Services</button>
+    </div>
+    <div class="grid-4" id="packagesGrid"></div>
+  </div>
+</section>
+
+<!-- Services -->
+<section id="services" class="section services">
+  <div class="container">
+    <div class="grid-2" id="servicesGrid"></div>
+  </div>
+</section>
+
+<!-- Testimonials -->
+<section class="section testimonials">
+  <div class="hero-overlay"></div>
+  <div class="container relative">
+    <p class="eyebrow">What Clients Say</p>
+    <h2 class="white">We're trusted by the most important teams</h2>
+    <div class="stats" id="statsGrid"></div>
+    <div class="grid-3" id="testimonialsGrid"></div>
+  </div>
+</section>
+
+<!-- Clients -->
+<section class="section clients">
+  <div class="container">
+    <h3 class="clients-title">Our Clients</h3>
+    <div class="clients-grid" id="clientsGrid"></div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="section faq">
+  <div class="container faq-grid">
+    <div>
+      <p class="eyebrow">Have Questions?</p>
+      <h2>Frequently Asked Questions</h2>
+      <p class="muted">Find answers to common questions about our platform and services. Can't find what you're looking for? Feel free to contact our support team.</p>
+    </div>
+    <div class="accordion" id="faqAccordion"></div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="section cta-wrap">
+  <div class="container">
+    <div class="cta">
+      <div class="hero-overlay"></div>
+      <div class="cta-inner">
+        <div>
+          <h2 class="white">Professional Creative Services, <span class="accent">On Your Demand</span></h2>
+          <p class="muted-light">Need a new logo, website, or branding? We provide top-tier solutions. Browse portfolios, order directly, and bring your vision to life.</p>
+        </div>
+        <button class="btn btn-hero">Get Started →</button>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<!-- Footer -->
+<footer id="contact" class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="#" class="logo logo-light">Abba<span>.Concepts</span></a>
+        <p class="muted-light">The marketplace for creative professionals. Find, hire, and collaborate with top talent.</p>
+      </div>
+      <div>
+        <h4>Company</h4>
+        <ul><li><a href="#">About</a></li><li><a href="#">Portfolio</a></li><li><a href="#">Services</a></li><li><a href="#">Contact</a></li></ul>
+      </div>
+      <div>
+        <h4>Support</h4>
+        <ul><li><a href="#">Help Center</a></li><li><a href="#">Terms of Service</a></li><li><a href="#">Privacy Policy</a></li></ul>
+      </div>
+    </div>
+    <p class="copyright">© <span id="year"></span> Abba Concepts — All rights reserved.</p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
