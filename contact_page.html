@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact — Get in Touch</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+        .contact-container {
+            min-height: 100vh;
+            padding: 4rem 1.5rem;
+            background: var(--background);
+        }
+        
+        .contact-wrapper {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        
+        .contact-header {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+        
+        .contact-header h1 {
+            font-size: clamp(2rem, 5vw, 2.75rem);
+            font-weight: 800;
+            margin-bottom: 1rem;
+            color: var(--foreground);
+        }
+        
+        .contact-header p {
+            font-size: 1.125rem;
+            color: var(--muted-foreground);
+            line-height: 1.6;
+        }
+        
+        .contact-card {
+            background: var(--card);
+            border: 1px solid var(--border);
+            border-radius: 1.5rem;
+            padding: 2.5rem;
+            box-shadow: var(--shadow-card);
+        }
+        
+        .form-group {
+            margin-bottom: 1.75rem;
+        }
+        
+        .form-group:last-child {
+            margin-bottom: 0;
+        }
+        
+        label {
+            display: block;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+            color: var(--foreground);
+            font-size: 0.95rem;
+        }
+        
+        input,
+        textarea {
+            width: 100%;
+            padding: 0.75rem 1rem;
+            border: 1px solid var(--border);
+            border-radius: 0.6rem;
+            font-family: 'Inter', system-ui, sans-serif;
+            font-size: 1rem;
+            color: var(--foreground);
+            background: var(--background);
+            transition: var(--transition);
+        }
+        
+        input:focus,
+        textarea:focus {
+            outline: none;
+            border-color: var(--primary);
+            background: var(--card);
+            box-shadow: 0 0 0 3px hsl(174 72% 45% / 0.1);
+        }
+        
+        textarea {
+            resize: vertical;
+            min-height: 150px;
+        }
+        
+        .submit-btn {
+            width: 100%;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.5rem;
+            background: var(--gradient-primary);
+            color: white;
+            font-weight: 700;
+            padding: 0.9rem 1.5rem;
+            border-radius: 0.6rem;
+            border: none;
+            cursor: pointer;
+            font-size: 1rem;
+            transition: var(--transition);
+            margin-top: 0.5rem;
+        }
+        
+        .submit-btn:hover {
+            box-shadow: var(--shadow-glow);
+            transform: translateY(-2px);
+        }
+        
+        .submit-btn:active {
+            transform: translateY(0);
+        }
+        
+        .form-message {
+            padding: 1rem;
+            border-radius: 0.6rem;
+            margin-bottom: 1.5rem;
+            display: none;
+            font-weight: 500;
+        }
+        
+        .form-message.success {
+            background: hsl(174 72% 45% / 0.1);
+            color: hsl(174 72% 45%);
+            display: block;
+        }
+        
+        .form-message.error {
+            background: hsl(0 84% 60% / 0.1);
+            color: hsl(0 84% 60%);
+            display: block;
+        }
+        
+        @media (max-width: 640px) {
+            .contact-container {
+                padding: 2rem 1.5rem;
+            }
+            
+            .contact-card {
+                padding: 1.75rem;
+            }
+            
+            .contact-header {
+                margin-bottom: 2.5rem;
+            }
+            
+            .contact-header h1 {
+                font-size: 1.75rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<header class="navbar">
+  <div class="container nav-inner">
+    <a href="index.html" class="logo">Abba<span>.Concepts</span></a>
+    <nav class="nav-links" id="navLinks">
+      <!-- <a href="#portfolio">Portfolio</a> -->
+      <!-- <a href="#services">Services</a> -->
+      <a href="contact_page.html">Contact</a>
+      <a href="cv_page.html">My CV</a>
+
+    </nav>
+    <button class="menu-btn" id="menuBtn" aria-label="Menu">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+    </button>
+  </div>
+</header>
+
+
+    <div class="contact-container">
+        <div class="contact-wrapper">
+            <div class="contact-header">
+                <h1>Get in Touch</h1>
+                <p>Have a project in mind or just want to chat? I'd love to hear from you.</p>
+            </div>
+            
+            <div class="contact-card">
+                <div class="form-message" id="formMessage"></div>
+                
+                <form id="contactForm" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" required placeholder="Your name">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required placeholder="your@email.com">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="subject">Subject</label>
+                        <input type="text" id="subject" name="subject" required placeholder="What is this about?">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" required placeholder="Tell me more..."></textarea>
+                    </div>
+                    
+                    <button type="submit" class="submit-btn">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <line x1="22" y1="2" x2="11" y2="13"></line>
+                            <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                        </svg>
+                        Send Message
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+    
+    <script>
+        const form = document.getElementById('contactForm');
+        const formMessage = document.getElementById('formMessage');
+        
+        form.addEventListener('submit', async (e) => {
+            e.preventDefault();
+            
+            const formData = new FormData(form);
+            
+            try {
+                const response = await fetch(form.action, {
+                    method: 'POST',
+                    body: formData,
+                    headers: {
+                        'Accept': 'application/json'
+                    }
+                });
+                
+                if (response.ok) {
+                    formMessage.textContent = 'Message sent successfully! I\'ll get back to you soon.';
+                    formMessage.classList.add('success');
+                    formMessage.classList.remove('error');
+                    form.reset();
+                    setTimeout(() => {
+                        formMessage.classList.remove('success');
+                    }, 5000);
+                } else {
+                    throw new Error('Form submission failed');
+                }
+            } catch (error) {
+                formMessage.textContent = 'Error sending message. Please try again.';
+                formMessage.classList.add('error');
+                formMessage.classList.remove('success');
+            }
+        });
+    </script>
+</body>
+</html>
