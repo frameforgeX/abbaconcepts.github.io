@@ -1,14 +1,14 @@
 // Data
 const packages = [
   { name: "Classic Wedding Design Package", price: 49, days: 3, tag: "Starter" },
-  { name: "Signature Wedding Design Package", price: 76, days: 5, tag: "Popular" },
+  { name: "Church Program Flyers", price: 10.99, days: 5, tag: "Popular" },
   { name: "Luxe Wedding Design Package", price: 107, days: 8, tag: "Premium" },
   { name: "Unscript Wedding Design Package", price: 85, days: 10, tag: "Custom" },
 ];
 
 const services = [
   { tag: "Brand Strategy", title: "Corporate Branding", desc: "Organised and appealing User Interface designs you and your clients will love to see and experience.", img: "assets/service-branding.jpg", cta: "Get Started" },
-  { tag: "Product UI", title: "Mobile App Interfaces", desc: "High-fidelity mobile UI designs that focus on usability and delight.", img: "assets/service-mobile.jpg", cta: "Contact Us" },
+  { tag: "Product UI", title: "Mobile App Interfaces", desc: "High-fidelity mobile UI designs that focus on usability and delight.", img: "assets/Abba_UI.jpg", cta: "Contact Us" },
   { tag: "Graphic Designs", title: "Creatives & Flyers", desc: "Comprehensive identity systems to make your brand memorable and cohesive.", img: "assets/service-graphic.jpg", cta: "Explore Services" },
   { tag: "Web Development", title: "Business Online Presence", desc: "Custom, responsive websites and web applications designed to drive your business forward.", img: "assets/service-web.jpg", cta: "Explore Services" },
 ];
@@ -28,12 +28,12 @@ const testimonials = [
 const clients = ["RafRuf Promotion", "SamTrack", "Vita Verde", "BlueLeaf", "NorthPeak", "Lumen Co."];
 
 const faqs = [
-  { q: "How do I get started with mirage.tech?", a: "Simply browse our portfolio to see available services, or create an account to upload your own work. You can start hiring creative professionals within minutes." },
+  { q: "How do I get started with Abba Concepts?", a: "Simply browse our portfolio to see available services, or create an account to upload your own work. You can start hiring creative professionals within minutes." },
   { q: "What payment methods do you accept?", a: "We accept all major credit cards, PayPal, and bank transfers. All transactions are secure and encrypted for your protection." },
   { q: "Can I request custom services?", a: "Absolutely! Contact our support team to discuss your specific needs. We can help connect you with professionals who specialize in custom projects." },
   { q: "How long does delivery typically take?", a: "Delivery times vary based on the service complexity. Most services are completed within 3-7 days, though some premium services may take longer." },
   { q: "What if I'm not satisfied with the work?", a: "We offer a satisfaction guarantee. If you're not happy with the results, we'll work with the professional to make revisions or provide a full refund." },
-  { q: "Is my data secure on mirage.tech?", a: "Yes, we use industry-standard security measures to protect your data. All information is encrypted and stored securely on our servers." },
+  { q: "Is my data secure on Abba Concepts?", a: "Yes, we use industry-standard security measures to protect your data. All information is encrypted and stored securely on our servers." },
 ];
 
 const star = `<svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>`;
